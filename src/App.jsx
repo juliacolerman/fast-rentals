@@ -27,7 +27,7 @@ import {
 // Phone format: tel:+1XXXXXXXXXX
 // =============================================================
 
-const WHATSAPP_URL = "https://wa.me/12136135314?text=Hi%20Fast%20Rentals%2C%20I%20want%20to%20rent%20a%20car%20and%20start%20driving%20this%20week.";
+const WHATSAPP_URL = "https://wa.me/12136135314";
 const PHONE_URL = "tel:+12136135314";
 const SMS_URL = "sms:+12136135314";
 const DISPLAY_PHONE = "(213) 613-5314";
@@ -879,7 +879,7 @@ function WhyPayMore() {
             Keep more of what you earn.
           </h2>
           <p className="mt-6 text-lg font-medium leading-8 text-white/62">
-            Fast Rentals helps drivers find affordable weekly cars to start working fast.
+            Affordable weekly rentals designed to help drivers keep more money in their pocket.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <CTAButton href={WHATSAPP_URL}>Message Us On WhatsApp</CTAButton>
@@ -1479,13 +1479,10 @@ function OwnerPage({ onBack, lang, setLang }) {
         <div className="absolute right-0 top-0 h-[30rem] w-[30rem] rounded-full bg-lime-300/10 blur-[140px]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
-          <button
-            onClick={onBack}
-            className="mb-8 rounded-xl border border-white/10 bg-black/80 px-5 py-3 text-xs font-black uppercase tracking-[0.18em] text-white backdrop-blur-xl transition hover:border-lime-300/30 hover:text-lime-200"
-          
-          >
-            ← Back
-          </button>
+          <div className="mb-8 inline-flex items-center gap-3 rounded-full border border-lime-300/20 bg-lime-300/10 px-5 py-3 text-xs font-black uppercase tracking-[0.22em] text-lime-200 backdrop-blur-xl">
+            <Car className="h-4 w-4" />
+            Fast Rentals
+          </div>
 
           <div className="mt-2">
             <SectionLabel>Southern California & Major Cities</SectionLabel>
